@@ -5,7 +5,7 @@ This project demonstrates a single-axis upsampling technique using SMAA (Subpixe
 ## Requirements
 
 - **Windows:** clang compiler
-- **Linux:** clang compiler, cmake, [premake-cmake extension](https://github.com/premake/premake-cmake)
+- **Linux:** clang compiler, cmake, [premake-cmake extension](https://github.com/Enhex/premake-cmake)
 
 ## Building the Project
 
