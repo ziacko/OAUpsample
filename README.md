@@ -25,4 +25,6 @@ So how does this work?
 here is an example of this in practice with 85% of the pixels on the X axis being stripped
 [Screencast_20250722_155514.webm](https://github.com/user-attachments/assets/de0c9aae-a582-4d56-8ec6-7b8cc9d0cde7)
 
-NOTE: this works best when stripping pixels vertically
+NOTE:
+- this works best when stripping pixels vertically
+- if you are rendering via OpenGL, be sure to flip the search and area textures for SMAA to account for Y-flip issues
