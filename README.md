@@ -7,7 +7,7 @@ Windows: clang compiler
 Linux: clang compiler, cmake, premake-cmake extension
 
 How to build project files:
-- call the premake script. e.g. "./premake.exe vs2022" for window and "premake cmake" for linux
+- call the premake script. e.g. "./premake.exe vs2022" for Windows and "premake cmake" for Linux
 
 How to compile
 - Windows: Open the generated solution file which will be generated inside of "./proj/vs"
