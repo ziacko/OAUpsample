@@ -1,30 +1,40 @@
 # One Axis Upsampling
-an example project to showcase a Single Axis upsampling technique using SMA
 
-requirements:
-- Windows: clang compiler
-- Linux: clang compiler, cmake, premake-cmake extension
+This project demonstrates a single-axis upsampling technique using SMAA (Subpixel Morphological Anti-Aliasing).
 
-How to build project files:
-- call the premake script. e.g. "./premake.exe vs2022" for Windows and "premake cmake" for Linux
+## Requirements
 
-How to compile
-- Windows: Open the generated solution file which will be generated inside of "./proj/vs"
-- Linux: open the project folder in CLion and manually select the Generated CMakeLists.txt file that will be generated inside of "./proj/cmake/"
+- **Windows:** clang compiler
+- **Linux:** clang compiler, cmake, [premake-cmake extension](https://github.com/premake/premake-cmake)
 
-Why does this project exist?
-- I was watching a video by Modern Vintage Gamer a couple years ago ("https://www.youtube.com/watch?v=BaX5YUZ5FLk"), in which he was describing how the original game developers were able to fit such a massive PS1 game onto the much smaller Nintendo 64 cartridge. To be concise, they slashed the resolution for the pre-rendered video files on a single axis(vertically) in addition to other compression techniques. One of the unique downsides to slashing resolution on one axis is that the overall image appears more pixellated(aliased) instead of simply blurred and retaining a lot of its sharpness. 
+## Building the Project
 
-- So I thought that if I combined this with an Anti-aliasing solution that scaled well enough, i could have a really solid and easy to implement upsampler that could be a decent alternative to DLSS and FSR. for this I used SMAA which is not only great at AA in general but is great for retaining image clarity.
+- **Run the premake script:**
+  - **Windows:** `./premake.exe vs2022`
+  - **Linux:** `premake cmake`
 
-So how does this work?
-- dynamically scale down the resolution of your project on a single axis and apply SMAA in the post process stack which will act as a type of "pixel-putty" to fill in the cracks
+## Compiling
 
+- **Windows:** Open the generated solution file located in `./proj/vs`.
+- **Linux:** Open the project folder in CLion and select the generated `CMakeLists.txt` located in `./proj/cmake/`.
 
-here is an example of this in practice with 85% of the pixels on the X axis being stripped
-[Screencast_20250722_155514.webm](https://github.com/user-attachments/assets/de0c9aae-a582-4d56-8ec6-7b8cc9d0cde7)
+## Project Motivation
 
-NOTE:
-- this works best when stripping pixels vertically
-- if you are rendering via OpenGL, be sure to flip the search and area textures for SMAA to account for Y-flip issues
-- the linux pre-built binary can only be run via command line for the time being
+While watching [this video by Modern Vintage Gamer](https://www.youtube.com/watch?v=BaX5YUZ5FLk), I learned how original game developers managed to fit impressive visuals onto limited hardware. Inspired by this, I combined a dynamic resolution technique with an anti-aliasing solution that scales well—resulting in an easy-to-implement upsampler that could serve as a lightweight alternative to DLSS and FSR.
+
+## How It Works
+
+- Dynamically scale down your project's resolution along a single axis.
+- Apply SMAA in the post-processing stack. This acts as a kind of "pixel putty" to fill gaps created by upsampling.
+
+### Example
+
+Here’s an example of 85% of the pixels on the X axis being stripped:
+[Screencast demo](https://github.com/user-attachments/assets/de0c9aae-a582-4d56-8ec6-7b8cc9d0cde7)
+
+## Notes
+
+- This technique works best when reducing pixels vertically.
+- If rendering with OpenGL, flip the search and area textures for SMAA to account for Y-flip issues.
+- The Linux pre-built binary can currently only be run via the command line.
+
