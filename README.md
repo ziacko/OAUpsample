@@ -18,6 +18,8 @@ This project demonstrates a single-axis upsampling technique using SMAA (Subpixe
 - **Windows:** Open the generated solution file located in `./proj/vs`.
 - **Linux:** Open the project folder in CLion and select the generated `CMakeLists.txt` located in `./proj/cmake/`.
 
+  Select the OAUpsampler project in your IDE of choice (Rider/Visual Studio/CLion), set the working directory to be the same folder as the project root folder and compile the selected project 
+
 ## Project Motivation
 
 While watching [this video by Modern Vintage Gamer](https://www.youtube.com/watch?v=BaX5YUZ5FLk), I learned how original game developers managed to fit impressive visuals onto limited hardware. Inspired by this, I combined a dynamic resolution technique with an anti-aliasing solution that scales well—resulting in an easy-to-implement upsampler that could serve as a lightweight alternative to DLSS and FSR.
