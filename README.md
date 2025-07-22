@@ -2,7 +2,6 @@
 an example project to showcase a Single Axis upsampling technique using SMA
 
 requirements:
-
 - Windows: clang compiler
 - Linux: clang compiler, cmake, premake-cmake extension
 
@@ -28,3 +27,4 @@ here is an example of this in practice with 85% of the pixels on the X axis bein
 NOTE:
 - this works best when stripping pixels vertically
 - if you are rendering via OpenGL, be sure to flip the search and area textures for SMAA to account for Y-flip issues
+- the linux pre-built binary can only be run via command line for the time being
