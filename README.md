@@ -13,7 +13,7 @@ How to compile
 - Linux: open the project folder in CLion and manually select the Generated CMakeLists.txt file that will be generated inside of "./proj/cmake/"
 
 Why does this project exist?
-- I was watching a video by Modern Vintage Gamer a couple years ago ("https://www.youtube.com/watch?v=BaX5YUZ5FLk"), in which he was describing how the original game developers were able to fit such a massive game onto the much smaller Nintendo 64 cartridge. To be concise, they slashed the resolution horizontally for the pre-rendered video files on a single axis(vertically) in addition to other compression techniques. One of the unique downsides to slashing resolution on one axis is that the overall image appears more pixellated(aliased) instead of simply blurred and retaining a lot of its sharpness. 
+- I was watching a video by Modern Vintage Gamer a couple years ago ("https://www.youtube.com/watch?v=BaX5YUZ5FLk"), in which he was describing how the original game developers were able to fit such a massive PS1 game onto the much smaller Nintendo 64 cartridge. To be concise, they slashed the resolution for the pre-rendered video files on a single axis(vertically) in addition to other compression techniques. One of the unique downsides to slashing resolution on one axis is that the overall image appears more pixellated(aliased) instead of simply blurred and retaining a lot of its sharpness. 
 
 - So I thought that if I combined this with an Anti-aliasing solution that scaled well enough, i could have a really solid and easy to implement upsampler that could be a decent alternative to DLSS and FSR. for this I used SMAA which is not only great at AA in general but is great for retaining image clarity.
 
