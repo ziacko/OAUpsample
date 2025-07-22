@@ -3,8 +3,8 @@ an example project to showcase a Single Axis upsampling technique using SMA
 
 requirements:
 
-Windows: clang compiler
-Linux: clang compiler, cmake, premake-cmake extension
+- Windows: clang compiler
+- Linux: clang compiler, cmake, premake-cmake extension
 
 How to build project files:
 - call the premake script. e.g. "./premake.exe vs2022" for Windows and "premake cmake" for Linux
