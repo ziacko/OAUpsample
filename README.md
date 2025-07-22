@@ -1,4 +1,4 @@
-# OAUpsample
+# One Axis Upsample
 an example project to showcase a Single Axis upsampling technique using SMA
 
 requirements:
