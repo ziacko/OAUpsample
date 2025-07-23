@@ -22,7 +22,7 @@ This project demonstrates a single-axis upsampling technique using SMAA (Subpixe
 
 ## Project Motivation
 
-While watching [this video by Modern Vintage Gamer](https://www.youtube.com/watch?v=BaX5YUZ5FLk), I learned how original game developers managed to fit impressive visuals onto limited hardware. Inspired by this, I combined a dynamic resolution technique with an anti-aliasing solution that scales well—resulting in an easy-to-implement upsampler that could serve as a lightweight alternative to DLSS and FSR.
+While watching [this video by Modern Vintage Gamer](https://www.youtube.com/watch?v=BaX5YUZ5FLk), I learned how original game developers of Resident Evil 2 managed to fit impressive visuals onto the limited N64 cartridge. Inspired by this, I combined a dynamic resolution technique with an anti-aliasing solution that scales well—resulting in an easy-to-implement upsampler that could serve as a lightweight alternative to DLSS and FSR.
 
 ## How It Works
 
